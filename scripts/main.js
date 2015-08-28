@@ -16,7 +16,7 @@
 // Author:
 //   <github username of the original script author>
 module.exports = function (robot) {
-  robot.respond(/clever (.*)/i, function (res) {
+  robot.hear(/>(.*)/i, function (res) {
     var Cleverbot = require('cleverbot-node');
     cleverbot = new Cleverbot;
     Cleverbot.prepare(function(){
