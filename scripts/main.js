@@ -21,7 +21,7 @@ module.exports = function (robot) {
     cleverbot = new Cleverbot;
     Cleverbot.prepare(function(){
       cleverbot.write(res.match[1], function (response) {
-           res.send(response.message);
+           res.reply(response.message);
       });
     });
   });
